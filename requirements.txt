@@ -1,0 +1,15 @@
+pytest
+pytest-html
+pytest-xdist
+pytest-check
+pytest-assume
+pytest-parallel
+pytest-rerunfailures
+jsonschema
+flake8
+faker
+requests
+locust
+deepdiff
+pytest-json
+python-dateutil
