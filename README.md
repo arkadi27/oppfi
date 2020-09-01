@@ -1,6 +1,4 @@
-Apily is a python based framework for testing REST apis. We have primarely used
-it for testing ar20 services, but can be used for testing pretty much any REST
-and gRpc services.
+Apily is a python based framework for testing REST apis. 
 
 # Installation
 
@@ -55,6 +53,8 @@ To be able to run tests, follow these steps:
 
 # Note
 Fixtures starting with l_ are local fixtures. Meaning you'll find them in the conftest.py file located in the same directory as the service name. For example l_get_posts can be found in /posts directory. Fixtures starting with g_ are global fixtures and are located in the src/test directory in the conftest.py file.
+
+Failing test cases are due to non valide operations returning status codes different than 405.
 
 If you are done working in the virtual environment for the moment, you can deactivate it:
 
