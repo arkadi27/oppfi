@@ -1,4 +1,4 @@
-Apily is a python based framework for testing REST apis. 
+api_ly is a python based framework for testing REST apis. 
 
 # Installation
 
