@@ -31,7 +31,7 @@ $ **virtualenv --version**
 
 *  To begin using the virtual environment, it needs to be activated:
 
-    $ **source venv/bin/activate**
+    $ **source venvName/bin/activate**
     
     The name of the current virtual environment will now appear on the left of the prompt (e.g. (venvName)Your-Computer:project_folder UserName$) to let you know that it’s active. From now on, any package that you install using pip will be placed in the venvName folder, isolated from the global Python installation.
 
