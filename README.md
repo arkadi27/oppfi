@@ -1,6 +1,4 @@
-Apily is a python based framework for testing REST apis. We have primarely used
-it for testing ar20 services, but can be used for testing pretty much any REST
-and gRpc services.
+api_ly is a python based framework for testing REST apis. 
 
 # Installation
 
@@ -33,7 +31,7 @@ $ **virtualenv --version**
 
 *  To begin using the virtual environment, it needs to be activated:
 
-    $ **source venv/bin/activate**
+    $ **source venvName/bin/activate**
     
     The name of the current virtual environment will now appear on the left of the prompt (e.g. (venvName)Your-Computer:project_folder UserName$) to let you know that it’s active. From now on, any package that you install using pip will be placed in the venvName folder, isolated from the global Python installation.
 
@@ -51,10 +49,12 @@ To be able to run tests, follow these steps:
 
 * your virtual environment should have been actived from steps above
 *  **pip3 install -r requirements.txt** - command to install needed dependencies
-*  **pytest src/test/ --html=reports/TestResults.html -vv -n 2** - this for example will run tests for inside src/test directory, where -n is the number of parallel executions
+*  **pytest src/test/ --html=reports/TestResults.html -vv -n 2** - this for example will run tests inside src/test directory, where -n is the number of parallel executions
 
 # Note
 Fixtures starting with l_ are local fixtures. Meaning you'll find them in the conftest.py file located in the same directory as the service name. For example l_get_posts can be found in /posts directory. Fixtures starting with g_ are global fixtures and are located in the src/test directory in the conftest.py file.
+
+Failing test cases are due to non valide operations returning status codes different than 405.
 
 If you are done working in the virtual environment for the moment, you can deactivate it:
 
