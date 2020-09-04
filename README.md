@@ -10,6 +10,7 @@ virtualenv is a tool to create isolated Python environments. virtualenv creates 
 It can be used standalone, in place of Pipenv.
 
 Install virtualenv via pip:
+
 $ Switch to super user account prior to virtualenv installation by calling sudo su
 
 $ **pip3 install virtualenv** - Might need to install pip first
