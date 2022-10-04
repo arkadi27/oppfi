@@ -51,7 +51,7 @@ To be able to run tests, follow these steps:
 *  **pytest tests/ --html=reports/TestResults.html -vv** - this for example will run tests inside src/test directory, where -n is the number of parallel executions
 
 # Note
-Before running the tests, add a TARGET_URL and API_KEY in the config.py file
+Before running the tests, add a TARGET_URL (without /offer) and API_KEY in the config.py file
 
 Fixtures starting with l_ are local fixtures. Meaning you'll find them in the conftest.py file located in the same directory as the tests folder. Fixtures starting with g_ are global fixtures and are located in the oppfi directory in the conftest.py file.
 
