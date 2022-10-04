@@ -7,9 +7,6 @@ pytest-parallel
 pytest-rerunfailures
 jsonschema
 flake8
-faker
 requests
-locust
 deepdiff
 pytest-json
-python-dateutil

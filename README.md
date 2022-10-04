@@ -1,5 +1,3 @@
-api_ly is a python based framework for testing REST apis. 
-
 # Installation
 
 The very first step is to install python 3 on your machine. All the tests have been using python 3; test execution with python 2 should be fine.
@@ -50,12 +48,14 @@ To be able to run tests, follow these steps:
 
 * your virtual environment should have been actived from steps above
 *  **pip3 install -r requirements.txt** - command to install needed dependencies
-*  **pytest src/test/ --html=reports/TestResults.html -vv -n 2** - this for example will run tests inside src/test directory, where -n is the number of parallel executions
+*  **pytest tests/ --html=reports/TestResults.html -vv** - this for example will run tests inside src/test directory, where -n is the number of parallel executions
 
 # Note
-Fixtures starting with l_ are local fixtures. Meaning you'll find them in the conftest.py file located in the same directory as the service name. For example l_get_posts can be found in /posts directory. Fixtures starting with g_ are global fixtures and are located in the src/test directory in the conftest.py file.
+Before running the tests, add a TARGET_URL and API_KEY in the config.py file
 
-Failing test cases are due to non valide operations returning status codes different than 405.
+Fixtures starting with l_ are local fixtures. Meaning you'll find them in the conftest.py file located in the same directory as the tests folder. Fixtures starting with g_ are global fixtures and are located in the oppfi directory in the conftest.py file.
+
+Failing test cases are due to bad requests returning 200 status codes instead of 400.
 
 If you are done working in the virtual environment for the moment, you can deactivate it:
 
