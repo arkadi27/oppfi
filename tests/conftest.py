@@ -12,4 +12,4 @@ def l_oppfi_offer_url(g_target_url):
 @pytest.fixture
 def l_payload():
     payload = read_file('offer_application.json')
-    yield payload
+    return payload
